@@ -16,19 +16,13 @@ try:
     from termcolor import *
 except ImportError:
     print("You don't have 'termcolor' module trying to install!!")
-    os.system("pip3 install termcolor")
-    
-if os.getuid() != 0:
-    print("\n"+'\033[1m'+colored("[Run the code as root]","red")+'\n')
-    os.system("clear");print("\n"+'\033[1m'+colored("[Run the code as root]","red").center(85,"-")+'\n');print("Exiting.");time.sleep(1);os.system("clear");print("\n"+'\033[1m'+colored("[Run the code as root]","red").center(85,"-")+'\n');print("Exiting..");time.sleep(1);os.system("clear");print("\n"+'\033[1m'+colored("[Run the code as root]","red").center(85,"-")+'\n');print("Exiting...");time.sleep(1)
-    sys.exit()
-    
-	
+    os.system("pip install termcolor")
+        	
 try:
     from googlesearch import *
 except ImportError:
     print(colored("You don't have google module trying to install!!","red"))
-    os.system("pip3 install google")
+    os.system("pip install google")
 import docs.bing_search
 import docs.cheaker
 import docs.proxies
